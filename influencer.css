@@ -1,0 +1,72 @@
+* {
+    margin: auto;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+}
+
+/* Header Styles */
+.nav-container {
+    margin-top: 70px;
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    padding-left: 34px;
+}
+
+li a {
+    text-decoration: none;
+}
+
+.nav-icon {
+    width: 16px;
+    height: 16px;
+}
+
+/* header-body-container styles */
+.header-body-container {
+    display: flex;
+}
+
+.left-side {
+    display: flex;
+    align-items: center;
+}
+
+.left-side button {
+    border: none;
+    border-radius: 41px;
+    background: #E02C6D;
+    color: #FFF;
+    font-size: 16px;
+    display: inline-flex;
+    padding: 10px 24px;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.right-side {
+    background-image: url('/images/Circle\ design.svg');
+}
+
+.right-side img {
+    width: 440px;
+    height: 414px;
+}
+
+/* Section 1 Styles Start */
+.logo-container img {
+    width: 97.059px;
+    height: 28px;
+    margin-left: 20px;
+}
