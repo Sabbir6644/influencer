@@ -103,6 +103,7 @@ li a {
     max-width: 1440px;
     max-height: 3306px;
     background: #FFF;
+    margin-bottom: 100px;
 }
 
 .logo-container img {
@@ -111,7 +112,44 @@ li a {
     margin-left: 60px;
 }
 
+/* section 2 Styles Start */
+.section2-title {
+    text-align: center;
+    color: #3A3A3A;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
 
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.box {
+    max-width: 329px;
+    max-height: 476px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+
+.box>img {
+    max-width: 300px;
+    max-height: 256px;
+    flex-shrink: 0;
+}
+
+.box-content {
+    padding: 15px;
+}
+
+.section2-container>h5 {
+    text-align: right;
+    color: rgba(224, 44, 109, 0.87);
+   font-size: 1rem;
+}
 
 
 
@@ -129,15 +167,19 @@ li a {
         flex-direction: column-reverse;
         text-align: center;
     }
-   
-
-.logo-container {
-    margin-top: 30px;
-
-}
-ul li {
-    padding-left: 5px;
-}
 
 
+    .logo-container {
+        margin-top: 30px;
+
+    }
+
+    ul li {
+        padding-left: 5px;
+    }
+
+    .box-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
