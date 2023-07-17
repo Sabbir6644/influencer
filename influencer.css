@@ -1,5 +1,5 @@
 * {
-    margin: auto;
+    margin: 0px auto;
 }
 
 body {
@@ -7,12 +7,19 @@ body {
     flex-direction: column;
     width: 100vw;
     justify-content: center;
+    font-family: Poppins;
 }
 
 /* Header Styles */
 .nav-container {
     margin-top: 70px;
     display: flex;
+    width: 100vw;
+    justify-content: space-between;
+}
+
+nav h4 {
+    font-size: 1.5rem;
 }
 
 nav ul {
@@ -36,11 +43,35 @@ li a {
 /* header-body-container styles */
 .header-body-container {
     display: flex;
+    margin-top: 80px;
+    justify-content: space-between;
 }
 
 .left-side {
     display: flex;
     align-items: center;
+}
+
+.left-side-container {
+    max-width: 1440px;
+    max-height: 3306px;
+}
+
+.left-side-container h1 {
+    color: #3A3A3A;
+    font-size: 3.2rem;
+    font-weight: 700;
+    /* max-width: 582px;
+    max-height: 133px; */
+}
+
+.left-side-container p {
+    max-width: 505px;
+    max-height: 60.9px;
+    color: #3A3A3A;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: -3px;
 }
 
 .left-side button {
@@ -57,16 +88,56 @@ li a {
 
 .right-side {
     background-image: url('/images/Circle\ design.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 70px;
 }
 
-.right-side img {
-    width: 440px;
-    height: 414px;
+.right-side>img {
+    max-width: 440px;
+    max-height: 414px;
 }
 
 /* Section 1 Styles Start */
+.logo-container {
+    max-width: 1440px;
+    max-height: 3306px;
+    background: #FFF;
+}
+
 .logo-container img {
-    width: 97.059px;
-    height: 28px;
-    margin-left: 20px;
+    max-width: 97.059px;
+    max-height: 28px;
+    margin-left: 60px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 576px) {
+
+    .nav-container,
+    .header-body-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .header-body-container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+   
+
+.logo-container {
+    margin-top: 30px;
+
+}
+ul li {
+    padding-left: 5px;
+}
+
+
 }
