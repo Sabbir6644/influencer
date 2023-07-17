@@ -113,6 +113,11 @@ li a {
 }
 
 /* section 2 Styles Start */
+.section2-container {
+    max-width: 1440px;
+    max-height: 3306px;
+}
+
 .section2-title {
     text-align: center;
     color: #3A3A3A;
@@ -123,7 +128,8 @@ li a {
 
 .box-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
     gap: 30px;
 }
 
@@ -148,7 +154,56 @@ li a {
 .section2-container>h5 {
     text-align: right;
     color: rgba(224, 44, 109, 0.87);
-   font-size: 1rem;
+    font-size: 1rem;
+}
+
+/* Section 3 Styles */
+.section3-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    max-height: 3306px;
+}
+
+.section3-container>div {
+    width: 50%;
+}
+
+.section3-img {
+    max-width: 404px;
+    max-height: 270px;
+}
+
+.section3-text-container {
+    display: flex;
+    height: auto;
+    align-items: center;
+}
+
+.section3-text-container>div>h3 {
+    color: #0A0826;
+    font-size: 2.3rem;
+    font-weight: 700;
+
+}
+
+.section3-text-container>div>p {
+    max-width: 501px;
+    max-height: 88px;
+    color: #6C6C6C;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-left: -5px;
+
+}
+.section3-text-container>div>button {
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 700;
+    background: #E02C6D;
+    border: none;
+
+
 }
 
 
